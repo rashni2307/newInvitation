@@ -46,7 +46,7 @@ export class AppComponent {
 //   }
 
   calculateDays() {
-    let marraigeDate: any = new Date("2022/12/18 10:00:00")
+    let marraigeDate: any = new Date("2022/12/29 11:00:00")
     setInterval(() => {
       this.data = this.timeDiffCalc(marraigeDate, new Date())
     }, 1000)
