@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow-y: scroll;
+    // background-image: url('/assets/images/pexels-viresh-studio-1444442.jpg');
+    background-image: url('/assets/images/Rash2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: .8;
+    z-index: -1;
+    background: #2f0602;
+    background: linear-gradient(to right, #0e0909, #2f0602);
+}
